@@ -1,0 +1,228 @@
+@font-face {
+  font-family: Fishmonger;
+  src: url("../fonts/Fishmonger EEB Plain.otf"); }
+html body {
+  margin: 0;
+  padding: 0; }
+  html body .not-supported {
+    display: none;
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF; }
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+  html body .not-supported {
+    display: initial; } }
+
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
+  html body .not-supported {
+    display: initial; } }
+
+  html body .home .bg {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; }
+    html body .home .bg .slide {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%); }
+  html body .home .overlay {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+    html body .home .overlay .header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      min-width: 320px;
+      max-width: 480px;
+      width: 30%; }
+      html body .home .overlay .header img {
+        width: 100%; }
+      html body .home .overlay .header .tweet {
+        position: absolute;
+        top: 32%;
+        width: 77%;
+        margin-left: 12%;
+        color: #FFFFFF;
+        font-family: Fishmonger;
+        font-size: 75%;
+        text-transform: uppercase; }
+    html body .home .overlay .logo {
+      position: absolute;
+      top: 2%;
+      left: 2%; }
+    html body .home .overlay .top-menu {
+      position: absolute;
+      top: 0;
+      right: 0; }
+      html body .home .overlay .top-menu img {
+        padding-top: 20%;
+        padding-right: 20%; }
+    html body .home .overlay .sidebar {
+      max-width: 206px;
+      max-height: 756px;
+      height: 80%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      z-index: 2;
+      overflow: hidden; }
+      html body .home .overlay .sidebar .sidebar-bg {
+        max-height: 100%; }
+      html body .home .overlay .sidebar .helados {
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+      html body .home .overlay .sidebar .arrow-up {
+        position: absolute;
+        top: 15%;
+        right: 29%;
+        z-index: 1; }
+      html body .home .overlay .sidebar .arrow-down {
+        position: absolute;
+        bottom: 14%;
+        right: 29%;
+        z-index: 1; }
+      html body .home .overlay .sidebar .para-cuidarme {
+        color: #FFFFFF;
+        font-family: Fishmonger;
+        font-size: 50%;
+        text-transform: uppercase;
+        position: absolute;
+        top: 5%;
+        right: 15%; }
+      html body .home .overlay .sidebar .para-compartir {
+        color: #000000;
+        font-family: Fishmonger;
+        font-size: 50%;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 5%;
+        right: 15%; }
+    html body .home .overlay .texto1 {
+      position: absolute;
+      bottom: 20%;
+      left: 10%;
+      width: 250px;
+      z-index: 2; }
+      html body .home .overlay .texto1 .texto {
+        color: #FFFFFF;
+        font-family: Fishmonger;
+        font-size: 175%;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 4px #000000;
+        margin: 0; }
+      html body .home .overlay .texto1 .button {
+        display: inline-flex;
+        align-items: center;
+        border-radius: 8px;
+        background-color: #1897D4; }
+        html body .home .overlay .texto1 .button span {
+          color: #FFFFFF;
+          font-family: Fishmonger;
+          font-size: 100%;
+          text-transform: uppercase;
+          line-height: 2;
+          padding-top: 3px;
+          padding-left: 10px;
+          padding-right: 10px;
+          margin: 0; }
+        html body .home .overlay .texto1 .button img {
+          padding-right: 10px; }
+    html body .home .overlay .bullets {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+      bottom: 17%;
+      z-index: 2; }
+      html body .home .overlay .bullets .inactive {
+        opacity: 0.5; }
+    html body .home .overlay .footer {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      margin: 0;
+      padding: 0;
+      z-index: 1; }
+@media (min-width: 768px) and (max-width: 1023px) {
+  html body .home .overlay .footer {
+    display: none; } }
+
+      html body .home .overlay .footer .footer-bg {
+        width: 100%; }
+      html body .home .overlay .footer .columnas .left {
+        position: absolute;
+        bottom: 5%;
+        left: 2%;
+        margin-bottom: 5px; }
+        html body .home .overlay .footer .columnas .left p {
+          font-family: Fishmonger;
+          font-size: 50%;
+          text-transform: uppercase;
+          margin: 3px; }
+        html body .home .overlay .footer .columnas .left .brand {
+          color: #102B52; }
+        html body .home .overlay .footer .columnas .left .lower {
+          color: #FFFFFF; }
+          html body .home .overlay .footer .columnas .left .lower p {
+            display: inline-block; }
+          html body .home .overlay .footer .columnas .left .lower .contact {
+            float: right; }
+      html body .home .overlay .footer .columnas .right {
+        position: absolute;
+        bottom: 5%;
+        right: 2%;
+        margin-bottom: 5px;
+        display: flex;
+        align-items: center; }
+        html body .home .overlay .footer .columnas .right p {
+          color: #FFFFFF;
+          font-family: Fishmonger;
+          font-size: 50%;
+          text-transform: uppercase; }
+
+.fade {
+  opacity: 1; }
+
+.fade.ng-enter,
+.fade.ng-leave {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.fade.ng-enter {
+  opacity: 0; }
+
+.fade.ng-enter-active {
+  opacity: 1; }
+
+.fade.ng-leave {
+  opacity: 1; }
+
+.fade.ng-leave-active {
+  opacity: 0; }
+
+.slide {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.slide.ng-hide {
+  opacity: 0; }
+
+/*# sourceMappingURL=nestle.css.map */

@@ -1,0 +1,149 @@
+<html ng-app="nestleApp">
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="css/interior.css">
+        <script src="js/jquery-2.2.3.min.js"></script>
+        <script src="js/angular.min.js"></script>
+        <script src="js/angular-route.min.js"></script>
+        <script src="js/angular-animate.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/controllers.js"></script>
+    </head>
+    </head>
+    <body>
+        <div class="site-bg">
+
+            <div bg>
+                <img src="img/bg.png" />
+            </div>
+
+            <!-- <div bg>
+                <img src="img/bg-interior.png" />
+            </div> -->
+
+            <!-- <div bg>
+                <img src="img/bg-tablet.png" />
+            </div> -->
+
+        </div>
+
+        <div class="overlay" ng-controller="OverlayController">
+
+            <div class="logo">
+                <img src="img/logo.png" />
+            </div>
+
+            <header class="header" ng-show="headerVisible">
+                <!-- <div> -->
+                    <img src="img/colgante.png" />
+                    <p class="tweet">#quechangon! Tutankamonki en el mundo perdido. Nuevo episodio de mundo changón http://bit.ly/107mxcv</p>
+                <!-- </div> -->
+            </header>
+
+            <div class="top-menu">
+                <img src="img/menu-icon.png" />
+            </div>
+
+            <div class="sidebar">
+                <img class="sidebar-bg" src="img/menu.png" />
+                <img class="arrow-up" src="img/arrowmenu-up.png" />
+                <img class="arrow-down" src="img/arrowmenu-down.png" />
+                <p class="para-cuidarme">Para cuidarme</p>
+                <p class="para-compartir">Para compartir</p>
+                <div class="helados">
+                    <img src="img/helado_01.png" />
+                    <img src="img/helado_02.png" />
+                    <img src="img/helado_03.png" />
+                    <img src="img/helado_04.png" />
+                    <img src="img/helado_05.png" />
+                </div>
+            </div>
+
+            <div class="texto1">
+                <p class="texto">La jugada 50 con Nestlé®</p>
+                <p class="button" ng-click="toggleHeader()"><span>Participa ahora</span> <img src="img/arrow-right.png" /></p>
+            </div>
+
+            <!-- <div class="texto2">
+                <h1>Danesa 33 ® Banana Split Heaven</h1>
+                <h2>Delicioso y <span class="highlight">sorprendente</span></h2>
+                <h3>Helado de grasa vegetal sabor a chocolate, plátano y fresa, con jarabe sabor a chocolate.</h3>
+                <h4><span>Información Nutrimental</span> <img src="img/arrow-right.png" /></h4>
+            </div> -->
+
+            <!-- <div class="controls">
+                <img src="img/arrowproduct-up.png" />
+                <img src="img/arrowproduct-down.png" />
+            </div> -->
+
+            <!-- <div class="tudale">
+                <img src="img/tudale.png" />
+            </div> -->
+
+            <!-- <div class="product">
+                <img src="img/product.png" />
+            </div> -->
+
+            <!-- <div class="flavors">
+                <div class="flavor">
+                    <img src="img/flavor-1.png" />
+                    <p>Cobertura sabor chocolate</p>
+                </div>
+                <div class="flavor">
+                    <img src="img/flavor-2.png" />
+                    <p>Helado sabor vainilla y fresa</p>
+                </div>
+                <div class="flavor">
+                    <img src="img/flavor-3.png" />
+                    <p>Base de helado sabor fresa</p>
+                </div>
+            </div> -->
+
+            <!-- <div class="contact-box">
+                <h1>
+                    Queremos escucharte
+                </h1>
+                <h2>
+                    Para Helados Nestlé, tu opinión es muy valiosa
+                </h2>
+                <h3>
+                    Compártenos tus comentarios y con gusto un ejecutivo se comunicará contigo para atender tus dudas y peticiones.
+                </h3>
+                <h4>
+                    Comentarios de nuestros productos
+                </h4>
+                <h5>
+                    5267.3303<br>
+                    Lada sin costo: 01800.363.7853
+                </h5>
+                <hr>
+                <h4>
+                    ¿Tienes problemas con tu congelador?
+                </h4>
+                <h5>
+                    Lada sin costo: 01800.147.7474
+                </h5>
+            </div> -->
+
+            <footer>
+                <img class="footer-bg" src="img/footer.png" />
+                <div class="columnas">
+                    <div class="left">
+                        <p class="brand">Helados Nestlé, México © 2015</p>
+                        <div class="lower">
+                            <p class="legal">Aviso legal</p><p class="contact">Contáctanos</p>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <p>Síguenos en &nbsp;</p><img src="img/fb.png" /><img src="img/tw.png" />
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="not-supported">
+            Por favor cambie la orientación de su dispositivo.
+        </div>
+
+    </body>
+</html>

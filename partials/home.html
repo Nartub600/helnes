@@ -1,0 +1,65 @@
+<div class="home" ng-controller="SliderCtrl as vm">
+
+    <div class="bg">
+        <my-nestle-slider count="vm.count"></my-nestle-slider>
+    </div>
+
+    <div class="overlay">
+
+        <div class="header">
+            <img src="img/colgante.png" />
+            <p class="tweet">#quechangon! Tutankamonki en el mundo perdido. Nuevo episodio de mundo changón http://bit.ly/107mxcv</p>
+        </div>
+
+        <div class="logo">
+            <a href="#/product"><img src="img/logo.png" /></a>
+        </div>
+
+        <div class="top-menu">
+            <img src="img/menu-icon.png" />
+        </div>
+
+        <div class="sidebar">
+            <img class="sidebar-bg" src="img/menu.png" />
+            <img class="arrow-up" src="img/arrowmenu-up.png" />
+            <img class="arrow-down" src="img/arrowmenu-down.png" />
+            <p class="para-cuidarme">Para cuidarme</p>
+            <p class="para-compartir">Para compartir</p>
+            <div class="helados">
+                <img src="img/helado_01.png" />
+                <img src="img/helado_02.png" />
+                <img src="img/helado_03.png" />
+                <img src="img/helado_04.png" />
+                <img src="img/helado_05.png" />
+            </div>
+        </div>
+
+        <div class="texto1">
+            <p class="texto">La jugada 50 con Nestlé®</p>
+            <p class="button"><span>Participa ahora</span> <img src="img/arrow-right.png" /></p>
+        </div>
+
+        <div class="bullets">
+            <img src="img/bullet.png" ng-click="vm.prev()" />
+            <img src="img/bullet.png" ng-click="vm.next()" class="inactive" />
+            <img src="img/bullet.png" class="inactive" />
+        </div>
+
+        <div class="footer">
+            <img class="footer-bg" src="img/footer.png" />
+            <div class="columnas">
+                <div class="left">
+                    <p class="brand">Helados Nestlé, México © 2015</p>
+                    <div class="lower">
+                        <p class="legal">Aviso legal</p><p class="contact">Contáctanos</p>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>Síguenos en &nbsp;</p><img src="img/fb.png" /><img src="img/tw.png" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
