@@ -115,6 +115,24 @@ html {
                     }
                 }
 
+                .product-menu {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 45%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    // background: red;
+                    background: -webkit-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+                    z-index: 5;
+                    .product-item {
+                        width: 20%;
+                    }
+                }
+
                 .sidebar {
                     max-width: 206px;
                     max-height: 756px;
@@ -176,6 +194,31 @@ html {
                     }
                 }
 
+                .controls {
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    // text-align: center;
+                    z-index: 3;
+
+                    img {
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    img:nth-child(1) {
+                        top: 2%;
+                    }
+                    img:nth-child(2) {
+                        bottom: 2%;
+                    }
+                }
+
                 .texto1 {
                     position: absolute;
                     bottom: 20%;
@@ -214,6 +257,64 @@ html {
                     }
                 }
 
+                .texto2 {
+                    position: absolute;
+                    bottom: 20%;
+                    left: 10%;
+                    width: 250px;
+                    z-index: 2;
+                    text-transform: uppercase;
+                    font-family: Fishmonger;
+
+                    h1 {
+                        font-size: $font-m;
+                        color: $deep-blue;
+                    }
+
+                    h2 {
+                        font-size: $font-l;
+                        color: $white;
+
+                        .highlight {
+                            color: $red;
+                        }
+                    }
+
+                    h3 {
+                        font-size: $font-s;
+                        color: $white;
+                    }
+
+                    h4 {
+                        font-size: $font-s;
+                        background-color: $deeper-blue;
+                        color: $gray;
+                        display: inline-flex;
+                        align-items: center;
+                        border-radius: 8px;
+                        padding-top: 2px;
+                        padding-left: 10px;
+                        padding-right: 5px;
+                        img {
+                            padding: 5px;
+                        }
+                        .close {
+                            margin-left: 5px;
+                            margin-top: 3px;
+                            margin-bottom: 5px;
+                            color: $light-blue;
+                            border: 2px solid $light-blue;
+                            border-radius: 50%;
+                            width: 20px;
+                            height: 20px;
+                            .arr {
+                                text-align: center;
+                                line-height: 1.7em;
+                            }
+                        }
+                    }
+                }
+
                 .bullets {
                     position: absolute;
                     text-align: center;
@@ -223,6 +324,128 @@ html {
 
                     .inactive {
                         opacity: 0.5;
+                    }
+                }
+
+                .product {
+                    position: absolute;
+                    top: 5%;
+                    left: 35%;
+                }
+
+                .product-logo {
+                    position: absolute;
+                    top: 5%;
+                    left: 60%;
+                }
+
+                .nutrimental {
+                    position: absolute;
+                    z-index: 4;
+                    top: 40%;
+                    left: 60%;
+                    width: 350px;
+                    height: 300px;
+                    background: rgba(0,0,0, 0.9);
+                    border-radius: 10px;
+                    padding: 10px;
+
+                    .close {
+                        position: absolute;
+                        top: 2%;
+                        right: 2%;
+                        color: $white;
+                        border: 2px solid $white;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        .ecs {
+                            text-align: center;
+                            line-height: 2em;
+                        }
+                    }
+
+                    h1 {
+                        color: $white;
+                        font-family: Fishmonger;
+                        text-transform: uppercase;
+                        font-size: $font-l;
+                        margin: 0;
+                    }
+                    h2 {
+                        color: $white;
+                        font-family: Fishmonger;
+                        text-transform: uppercase;
+                        font-size: $font-s;
+                        margin: 0;
+                    }
+                    h3 {
+                        color: $black;
+                        background: $white;
+                        border-radius: 5px;
+                        font-family: Fishmonger;
+                        text-transform: uppercase;
+                        font-size: $font-s;
+                        padding: 5px;
+                        display: inline-block;
+                    }
+                    .items {
+                        .item-row {
+                            font-family: Fishmonger;
+                            text-transform: uppercase;
+                            font-size: $font-s;
+
+                            .left {
+                                display: inline-block;
+                                color: $white;
+                                width: 60%;
+                            }
+                            .right {
+                                display: inline-block;
+                                color: $light-blue;
+                            }
+                        }
+                    }
+                }
+
+                .contact-box {
+                    display: none;
+                    position: absolute;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    z-index: 3;
+                    left: 0%;
+                    bottom: 10%;
+                    width: 300px;
+                    height: 250px;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    background-color: $white;
+                    -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.5);
+                    -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.5);
+                    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.5);
+                    font-family: Arial;
+
+                    h1 {
+                        color: $blue;
+                        text-transform: uppercase;
+                        font-size: $font-m;
+                    }
+                    h2 {
+                        color: $light-blue;
+                        font-size: $font-s;
+                    }
+                    h3 {
+                        color: $black;
+                        font-size: $font-xs;
+                    }
+                    h4 {
+                        color: $black;
+                        font-size: $font-s;
+                    }
+                    h5 {
+                        color: $light-blue;
+                        font-size: $font-xs;
                     }
                 }
 
@@ -286,6 +509,184 @@ html {
                             }
                         }
                     }
+                }
+            }
+
+        }
+
+        .mobile {
+
+            @include media('>=tablet') {
+                display: none;
+            }
+
+            .top-bar {
+                img {
+                    width: 100%;
+                }
+                p {
+                    font-family: Fishmonger;
+                    color: $white;
+                    text-transform: uppercase;
+                }
+            }
+
+            .logo {
+                position: absolute;
+                top: 2%;
+                left: 5%;
+                z-index: 10;
+                img {
+                    width: 75%;
+                }
+            }
+
+            .middle {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content {
+                .product-zoom {
+                    position: relative;
+
+                    .bg-img {
+                        width: 100%;
+                    }
+
+                    .product-img {
+                        position: absolute;
+                        top: 2%;
+                        left: 10%;
+                        right: 0;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .arrow-left {
+                        position: absolute;
+                        top: 50%;
+                        left: 5%;
+                    }
+
+                    .arrow-right {
+                        position: absolute;
+                        top: 50%;
+                        right: 5%;
+                    }
+
+                    h1 {
+                        font-family: Fishmonger;
+                        font-size: 200%;
+                        text-transform: uppercase;
+                        color: $white;
+                        position: absolute;
+                        bottom: 10%;
+                        margin-left: 10px;
+                        span {
+                            color: $red;
+                        }
+                    }
+
+                    h2 {
+                        font-family: Fishmonger;
+                        font-size: 75%;
+                        text-transform: uppercase;
+                        color: $white;
+                        position: absolute;
+                        bottom: 0%;
+                        margin-left: 10px;
+                    }
+                }
+                .product-detail {
+                    .some-link {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: flex-end;
+                        p {
+                            font-family: Fishmonger;
+                            font-size: 50%;
+                            text-transform: uppercase;
+                            margin-right: 5px;
+                        }
+                        img {
+                            margin-right: 5px;
+                        }
+
+                    }
+                    .product-title {
+                        text-align: center;
+                    }
+                    .product-flavors {
+
+                        .flavor {
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            margin: 5px;
+                            width: 200px;
+                            p {
+                                padding-left: 5px;
+                                color: $black;
+                                text-transform: uppercase;
+                                font-family: Fishmonger;
+                                font-size: $font-s;
+                            }
+                        }
+                        .flavor:nth-child(1) {
+                            margin-left: 30%;
+                        }
+                        .flavor:nth-child(2) {
+                            margin-left: 20%;
+                        }
+                        .flavor:nth-child(3) {
+                            margin-left: 10%;
+                        }
+                    }
+                }
+            }
+
+            .bottom-bar {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .products-container {
+                position: absolute;
+                bottom: 15%;
+                width: 100%;
+                height: 150px;
+                overflow: hidden;
+                .products {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    position: absolute;
+                    .product {
+                        text-align: center;
+                        width: 100px;
+                        height: 100%;
+                        // border-left: 1px solid $gray;
+                        // border-right: 1px solid $gray;
+                        p {
+                            font-family: Fishmonger;
+                            color: $light-blue;
+                            font-size: 50%;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+
+            .footer {
+                // position: absolute;
+                // bottom: 0;
+                img {
+                    width: 100%;
                 }
             }
 
