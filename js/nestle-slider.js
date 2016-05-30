@@ -3,7 +3,7 @@
 var nestleSlider = angular.module('nestleSlider', []);
 
 nestleSlider.controller('SliderCtrl', function SliderCtrl($interval) {
-    this.count = 0;
+    this.count = 1;
 
     this.prev = function() {
         this.count > 0 ? this.count-- : this.count = 1;

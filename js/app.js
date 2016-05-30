@@ -18,9 +18,13 @@ nestleApp.config(function($routeProvider, $locationProvider){
             templateUrl: 'partials/product.html'
         })
 
-        // .when('/test', {
-        //     templateUrl: 'partials/test.html'
-        // })
+        .when('/mobile', {
+            templateUrl: 'partials/mobile.html'
+        })
+
+        .when('/mobileint', {
+            templateUrl: 'partials/mobileint.html'
+        })
 
         .otherwise('/home');
 });
