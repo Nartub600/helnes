@@ -3,7 +3,6 @@
 var nestleApp = angular.module('nestleApp', [
     'nestleControllers',
     'nestleDirectives',
-    'nestleSlider',
     'ngAnimate',
     'ngRoute'
 ]);
