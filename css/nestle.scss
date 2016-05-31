@@ -44,7 +44,7 @@ html {
             }
         }
 
-        .home {
+        .product {
 
             .bg {
                 z-index: 1;
@@ -125,72 +125,11 @@ html {
                     position: absolute;
                     top: 0;
                     right: 0;
-                    // background: red;
-                    background: -webkit-radial-gradient(80% 20%, closest-corner, #1a82f7, #2F2727);
+                    background-image: -webkit-radial-gradient(left center, ellipse farthest-corner, #2297C0 0%, #000000 100%);
                     z-index: 5;
+                    padding: 10px;
                     .product-item {
                         width: 20%;
-                    }
-                }
-
-                .sidebar {
-                    max-width: 206px;
-                    max-height: 756px;
-                    height: 80%;
-                    position: absolute;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    right: 0;
-                    z-index: 2;
-                    overflow: hidden;
-
-
-
-                    .sidebar-bg {
-                        max-height: 100%;
-                    }
-
-                    .helados {
-                        position: absolute;
-                        top: 20%;
-                        right: 20%;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                    }
-
-                    .arrow-up {
-                        position: absolute;
-                        top: 15%;
-                        right: 29%;
-                        z-index: 1;
-                    }
-
-                    .arrow-down {
-                        position: absolute;
-                        bottom: 14%;
-                        right: 29%;
-                        z-index: 1;
-                    }
-
-                    .para-cuidarme {
-                        color: $white;
-                        font-family: Fishmonger;
-                        font-size: $font-xs;
-                        text-transform: uppercase;
-                        position: absolute;
-                        top: 5%;
-                        right: 15%;
-                    }
-
-                    .para-compartir {
-                        color: $black;
-                        font-family: Fishmonger;
-                        font-size: $font-xs;
-                        text-transform: uppercase;
-                        position: absolute;
-                        bottom: 5%;
-                        right: 15%;
                     }
                 }
 
@@ -257,64 +196,6 @@ html {
                     }
                 }
 
-                .texto2 {
-                    position: absolute;
-                    bottom: 20%;
-                    left: 10%;
-                    width: 250px;
-                    z-index: 2;
-                    text-transform: uppercase;
-                    font-family: Fishmonger;
-
-                    h1 {
-                        font-size: $font-m;
-                        color: $deep-blue;
-                    }
-
-                    h2 {
-                        font-size: $font-l;
-                        color: $white;
-
-                        .highlight {
-                            color: $red;
-                        }
-                    }
-
-                    h3 {
-                        font-size: $font-s;
-                        color: $white;
-                    }
-
-                    h4 {
-                        font-size: $font-s;
-                        background-color: $deeper-blue;
-                        color: $gray;
-                        display: inline-flex;
-                        align-items: center;
-                        border-radius: 8px;
-                        padding-top: 2px;
-                        padding-left: 10px;
-                        padding-right: 5px;
-                        img {
-                            padding: 5px;
-                        }
-                        .close {
-                            margin-left: 5px;
-                            margin-top: 3px;
-                            margin-bottom: 5px;
-                            color: $light-blue;
-                            border: 2px solid $light-blue;
-                            border-radius: 50%;
-                            width: 20px;
-                            height: 20px;
-                            .arr {
-                                text-align: center;
-                                line-height: 1.7em;
-                            }
-                        }
-                    }
-                }
-
                 .bullets {
                     position: absolute;
                     text-align: center;
@@ -327,85 +208,147 @@ html {
                     }
                 }
 
-                .product {
-                    position: absolute;
-                    top: 5%;
-                    left: 35%;
-                }
+                .product-elements {
 
-                .product-logo {
-                    position: absolute;
-                    top: 5%;
-                    left: 60%;
-                }
-
-                .nutrimental {
-                    position: absolute;
-                    z-index: 4;
-                    top: 40%;
-                    left: 60%;
-                    width: 350px;
-                    height: 300px;
-                    background: rgba(0,0,0, 0.9);
-                    border-radius: 10px;
-                    padding: 10px;
-
-                    .close {
+                    .product-info {
                         position: absolute;
-                        top: 2%;
-                        right: 2%;
-                        color: $white;
-                        border: 2px solid $white;
-                        border-radius: 50%;
-                        width: 30px;
-                        height: 30px;
-                        .ecs {
-                            text-align: center;
-                            line-height: 2em;
+                        bottom: 20%;
+                        left: 10%;
+                        width: 250px;
+                        z-index: 2;
+                        text-transform: uppercase;
+                        font-family: Fishmonger;
+
+                        h1 {
+                            font-size: $font-m;
+                            color: $deep-blue;
+                        }
+
+                        h2 {
+                            font-size: $font-l;
+                            color: $white;
+
+                            .highlight {
+                                color: $red;
+                            }
+                        }
+
+                        h3 {
+                            font-size: $font-s;
+                            color: $white;
+                        }
+
+                        h4 {
+                            font-size: $font-s;
+                            background-color: $deeper-blue;
+                            color: $gray;
+                            display: inline-flex;
+                            align-items: center;
+                            border-radius: 8px;
+                            padding-top: 2px;
+                            padding-left: 10px;
+                            padding-right: 5px;
+                            img {
+                                padding: 5px;
+                            }
+                            .close {
+                                margin-left: 5px;
+                                margin-top: 3px;
+                                margin-bottom: 5px;
+                                color: $light-blue;
+                                border: 2px solid $light-blue;
+                                border-radius: 50%;
+                                width: 20px;
+                                height: 20px;
+                                .arr {
+                                    text-align: center;
+                                    line-height: 1.7em;
+                                }
+                            }
                         }
                     }
 
-                    h1 {
-                        color: $white;
-                        font-family: Fishmonger;
-                        text-transform: uppercase;
-                        font-size: $font-l;
-                        margin: 0;
+                    .product-pic {
+                        position: absolute;
+                        top: 5%;
+                        left: 35%;
                     }
-                    h2 {
-                        color: $white;
-                        font-family: Fishmonger;
-                        text-transform: uppercase;
-                        font-size: $font-s;
-                        margin: 0;
+
+                    .product-logo {
+                        position: absolute;
+                        top: 5%;
+                        left: 60%;
                     }
-                    h3 {
-                        color: $black;
-                        background: $white;
-                        border-radius: 5px;
-                        font-family: Fishmonger;
-                        text-transform: uppercase;
-                        font-size: $font-s;
-                        padding: 5px;
-                        display: inline-block;
-                    }
-                    .items {
-                        .item-row {
+
+                    .product-nutrimental {
+                        position: absolute;
+                        z-index: 4;
+                        top: 40%;
+                        left: 60%;
+                        width: 350px;
+                        height: 300px;
+                        background: rgba(0,0,0, 0.9);
+                        border-radius: 10px;
+                        padding: 10px;
+
+                        .close {
+                            position: absolute;
+                            top: 2%;
+                            right: 2%;
+                            color: $white;
+                            border: 2px solid $white;
+                            border-radius: 50%;
+                            width: 30px;
+                            height: 30px;
+                            .ecs {
+                                text-align: center;
+                                line-height: 2em;
+                            }
+                        }
+
+                        h1 {
+                            color: $white;
+                            font-family: Fishmonger;
+                            text-transform: uppercase;
+                            font-size: $font-l;
+                            margin: 0;
+                        }
+                        h2 {
+                            color: $white;
                             font-family: Fishmonger;
                             text-transform: uppercase;
                             font-size: $font-s;
+                            margin: 0;
+                        }
+                        h3 {
+                            color: $black;
+                            background: $white;
+                            border-radius: 5px;
+                            font-family: Fishmonger;
+                            text-transform: uppercase;
+                            font-size: $font-s;
+                            padding: 5px;
+                            display: inline-block;
+                        }
+                        .items {
+                            .item-row {
+                                font-family: Fishmonger;
+                                text-transform: uppercase;
+                                font-size: $font-s;
 
-                            .left {
-                                display: inline-block;
-                                color: $white;
-                                width: 60%;
-                            }
-                            .right {
-                                display: inline-block;
-                                color: $light-blue;
+                                .left {
+                                    display: inline-block;
+                                    color: $white;
+                                    width: 60%;
+                                }
+                                .right {
+                                    display: inline-block;
+                                    color: $light-blue;
+                                }
                             }
                         }
                     }
+
                 }
 
                 .contact-box {
@@ -696,3 +639,4 @@ html {
 }
 
 @import "animations";
+@import "sidebar";

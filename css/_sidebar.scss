@@ -1,0 +1,70 @@
+.sidebar {
+    max-width: 206px;
+    max-height: 756px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 2;
+    overflow: hidden;
+
+    .sidebar-bg {
+        max-height: 100%;
+    }
+
+    .para-cuidarme {
+        color: $white;
+        font-family: Fishmonger;
+        font-size: $font-xs;
+        text-transform: uppercase;
+        position: absolute;
+        top: 5%;
+        right: 15%;
+    }
+
+    .para-compartir {
+        color: $black;
+        font-family: Fishmonger;
+        font-size: $font-xs;
+        text-transform: uppercase;
+        position: absolute;
+        bottom: 5%;
+        right: 15%;
+    }
+
+    .arrow-up {
+        position: absolute;
+        top: 15%;
+        right: 29%;
+        z-index: 3;
+    }
+
+    .arrow-down {
+        position: absolute;
+        bottom: 14%;
+        right: 29%;
+        z-index: 3;
+    }
+
+
+    .visor {
+        position: absolute;
+        top: 49.6%;
+        height: 64.5%;
+        width: 94%;
+        transform: translateY(-50%);
+        right: 0;
+        z-index: 2;
+    }
+
+    .helados {
+        position: absolute;
+        top: 20%;
+        right: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+    }
+}
