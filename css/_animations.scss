@@ -45,3 +45,12 @@
 .contact-box.active {
     left: 0% !important;
 }
+
+.product-menu {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.product-menu.active {
+    right: 0% !important;
+}

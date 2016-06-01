@@ -6,10 +6,7 @@
 
     <nestle-logo ng-show="operator.showLogo"></nestle-logo>
 
-    <!-- <nestle-product-menu></nestle-product-menu> -->
-    <div class="top-menu">
-        <img src="img/menu-icon.png" />
-    </div>
+    <nestle-product-menu ng-class="(operator.showProductMenu ? 'active' : '')"></nestle-product-menu>
 
     <nestle-sidebar ng-show="operator.showSidebar"></nestle-sidebar>
 

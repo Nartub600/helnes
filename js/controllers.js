@@ -5,19 +5,24 @@ var nestleControllers = angular.module('nestleControllers', []);
 nestleControllers.controller('OperatorController', function($interval){
 
     this.showLogo = true;
-    this.showHeader = true
+    this.showHeader = true;
     this.showInfotext = true;
     this.showContact = false;
     this.showSidebar = true;
+    this.showProductMenu = false;
 
     this.toggleContact = function() {
         this.showContact = !this.showContact;
     }
 
+    this.toggleProductMenu = function() {
+        this.showProductMenu = !this.showProductMenu;
+    }
+
     // var self = this;
 
     // $interval(function(){
-    //     self.showLogo = !self.showLogo;
+    //     self.toggleProductMenu();
     // }, 3000)
 
 });

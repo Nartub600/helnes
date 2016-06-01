@@ -35,7 +35,7 @@ nestleDirectives.directive('nestleHeader', function(){
 
 nestleDirectives.directive('nestleProductMenu', function(){
     return {
-        scope: {},
+        // scope: false,
         replace: true,
         controller: 'ProductMenuController',
         controllerAs: 'pmCtrl',

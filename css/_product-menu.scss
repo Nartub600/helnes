@@ -1,0 +1,30 @@
+.product-menu {
+    width: 45%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -46.5%;
+    background-image: -webkit-radial-gradient(left center, ellipse farthest-corner, #2297C0 0%, #000000 100%);
+    z-index: 5;
+    padding: 10px;
+
+    .menu-icon {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        img {
+            padding-top: 20%;
+            padding-right: 20%;
+        }
+    }
+
+    .product-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        .product-item {
+            width: 20%;
+        }
+    }
+}

@@ -1,5 +1,10 @@
 <div class="product-menu">
-    <div class="product-item" ng-repeat="product in pmCtrl.products">
-        <img ng-src="{{ product.src }}" />
+    <div class="menu-icon">
+        <img src="img/menu-icon.png" ng-click="operator.toggleProductMenu()" />
+    </div>
+    <div class="product-list">
+        <div class="product-item" ng-repeat="product in pmCtrl.products">
+            <img ng-src="{{ product.src }}" />
+        </div>
     </div>
 </div>
