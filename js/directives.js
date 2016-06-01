@@ -5,7 +5,7 @@ var nestleDirectives = angular.module('nestleDirectives', []);
 nestleDirectives.directive('nestleBackground', function($interval) {
     function link(scope, element, attrs) {
         var sliderTimer = $interval(function() {
-            scope.bgCtrl.activeSlide = (scope.bgCtrl.activeSlide + 1) % scope.bgCtrl.slides.length;
+            scope.bgCtrl.nextSlide();
         }, 5000);
     }
 
@@ -25,6 +25,13 @@ nestleDirectives.directive('nestleLogo', function(){
         templateUrl: 'partials/nestle-logo.html'
     }
 });
+
+nestleDirectives.directive('nestleHeader', function(){
+    return {
+        replace: true,
+        templateUrl: 'partials/nestle-header.html'
+    }
+})
 
 nestleDirectives.directive('nestleProductMenu', function(){
     return {
@@ -52,6 +59,13 @@ nestleDirectives.directive('nestleSidebar', function(){
     }
 });
 
+nestleDirectives.directive('nestleInfotext', function(){
+    return {
+        replace: true,
+        templateUrl: 'partials/nestle-infotext.html'
+    }
+});
+
 nestleDirectives.directive('nestleContact', function(){
     return {
         replace: true,
@@ -61,13 +75,7 @@ nestleDirectives.directive('nestleContact', function(){
 
 nestleDirectives.directive('nestleFooter', function(){
     return {
-        scope: {},
         replace: true,
-        controller: 'FooterController',
-        controllerAs: 'ftrCtrl',
-        templateUrl: 'partials/nestle-footer.html',
-        link: function(scope, element, attrs) {
-
-        }
+        templateUrl: 'partials/nestle-footer.html'
     }
 });

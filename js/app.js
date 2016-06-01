@@ -4,7 +4,8 @@ var nestleApp = angular.module('nestleApp', [
     'nestleControllers',
     'nestleDirectives',
     'ngAnimate',
-    'ngRoute'
+    'ngRoute',
+    'ngTouch'
 ]);
 
 nestleApp.config(function($routeProvider, $locationProvider){
@@ -14,6 +15,10 @@ nestleApp.config(function($routeProvider, $locationProvider){
         })
 
         .when('/product', {
+            templateUrl: 'partials/product.html'
+        })
+
+        .when('/product/:product', {
             templateUrl: 'partials/product.html'
         })
 

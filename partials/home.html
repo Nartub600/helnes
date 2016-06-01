@@ -1,172 +1,22 @@
-<div class="home" ng-controller="SliderCtrl as vm">
+<div class="operator" ng-controller="OperatorController as operator">
 
-    <div class="bg">
-        <my-nestle-slider count="vm.count"></my-nestle-slider>
+    <nestle-background></nestle-background>
+
+    <nestle-header ng-show="operator.showHeader"></nestle-header>
+
+    <nestle-logo ng-show="operator.showLogo"></nestle-logo>
+
+    <!-- <nestle-product-menu></nestle-product-menu> -->
+    <div class="top-menu">
+        <img src="img/menu-icon.png" />
     </div>
 
-    <div class="overlay">
+    <nestle-sidebar ng-show="operator.showSidebar"></nestle-sidebar>
 
-        <!-- <div class="header">
-            <img src="img/colgante.png" />
-            <p class="tweet">#quechangon! Tutankamonki en el mundo perdido. Nuevo episodio de mundo changón http://bit.ly/107mxcv</p>
-        </div> -->
+    <nestle-infotext ng-show="operator.showInfotext"></nestle-infotext>
 
-        <div class="logo">
-            <a href="#/product"><img src="img/logo.png" /></a>
-        </div>
+    <nestle-contact ng-class="(operator.showContact ? 'active' : '')"></nestle-contact>
 
-        <div class="top-menu">
-            <img src="img/menu-icon.png" />
-        </div>
-
-        <div class="product-menu">
-            <div class="product-item" ng-repeat="helado in helados">
-                <img src="img/helado_01.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_01.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_02.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_03.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_04.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_05.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_06.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_07.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_08.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_09.png" />
-            </div>
-            <div class="product-item">
-                <img src="img/helado_10.png" />
-            </div>
-        </div>
-
-        <div class="sidebar">
-            <img class="sidebar-bg" src="img/menu.png" />
-            <img class="arrow-up" src="img/arrowmenu-up.png" />
-            <img class="arrow-down" src="img/arrowmenu-down.png" />
-            <p class="para-cuidarme">Para cuidarme</p>
-            <p class="para-compartir">Para compartir</p>
-            <div class="helados">
-                <img src="img/helado_01.png" />
-                <img src="img/helado_02.png" />
-                <img src="img/helado_03.png" />
-                <img src="img/helado_04.png" />
-                <img src="img/helado_05.png" />
-            </div>
-        </div>
-
-        <div class="controls">
-            <img src="img/arrowproduct-up.png" />
-            <img src="img/arrowproduct-down.png" />
-        </div>
-
-        <!-- <div class="texto1">
-            <p class="texto">La jugada 50 con Nestlé®</p>
-            <p class="button"><span>Participa ahora</span> <img src="img/arrow-right.png" /></p>
-        </div> -->
-
-        <div class="texto2">
-            <h1>Danesa 33 ® Banana Split Heaven</h1>
-            <h2>Delicioso y <span class="highlight">sorprendente</span></h2>
-            <h3>Helado de grasa vegetal sabor a chocolate, plátano y fresa, con jarabe sabor a chocolate.</h3>
-            <h4>
-                <span>Información Nutrimental</span>
-                <div class="close">
-                    <div class="arr">></div>
-                </div>
-            </h4>
-        </div>
-
-        <!-- <div class="bullets">
-            <img src="img/bullet.png" ng-click="vm.prev()" />
-            <img src="img/bullet.png" ng-click="vm.next()" class="inactive" />
-            <img src="img/bullet.png" class="inactive" />
-        </div> -->
-
-        <div class="product">
-            <img src="img/product.png" />
-        </div>
-
-        <div class="product-logo">
-            <img src="img/product-logo.png" />
-        </div>
-
-        <div class="nutrimental">
-            <div class="close">
-                <div class="ecs">✖</div>
-            </div>
-            <h1>Tandem Sandwich ®</h1>
-            <h2>Tamaño de porción 160 ml</h2>
-            <h3>Contenido energético 1202 kj - 287 kcal</h3>
-            <div class="items">
-                <div class="item-row">
-                    <div class="left">Proteínas</div>
-                    <div class="right">2,55 g</div>
-                </div>
-                <div class="item-row">
-                    <div class="left">Sodio</div>
-                    <div class="right">155,9 mg</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="contact-box">
-            <h1>
-                Queremos escucharte
-            </h1>
-            <h2>
-                Para Helados Nestlé, tu opinión es muy valiosa
-            </h2>
-            <h3>
-                Compártenos tus comentarios y con gusto un ejecutivo se comunicará contigo para atender tus dudas y peticiones.
-            </h3>
-            <h4>
-                Comentarios de nuestros productos
-            </h4>
-            <h5>
-                5267.3303<br>
-                Lada sin costo: 01800.363.7853
-            </h5>
-            <hr>
-            <h4>
-                ¿Tienes problemas con tu congelador?
-            </h4>
-            <h5>
-                Lada sin costo: 01800.147.7474
-            </h5>
-        </div>
-
-        <div class="footer">
-            <!-- <img class="footer-bg" src="img/footer.png" /> -->
-            <div class="columnas">
-                <div class="left">
-                    <p class="brand">Helados Nestlé, México © 2015</p>
-                    <div class="lower">
-                        <p class="legal">Aviso legal</p><p class="contact">Contáctanos</p>
-                    </div>
-                </div>
-                <div class="right">
-                    <!-- <p>Síguenos en &nbsp;</p> -->
-                    <img src="img/fb.png" /><img src="img/tw.png" />
-                </div>
-            </div>
-        </div>
-
-    </div>
+    <nestle-footer></nestle-footer>
 
 </div>

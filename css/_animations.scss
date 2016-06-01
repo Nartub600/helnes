@@ -27,3 +27,21 @@
 .slide.ng-hide {
     opacity: 0;
 }
+
+.bullet {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.bullet.active {
+    opacity: 1
+}
+
+.contact-box {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.contact-box.active {
+    left: 0% !important;
+}

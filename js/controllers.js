@@ -2,13 +2,33 @@
 
 var nestleControllers = angular.module('nestleControllers', []);
 
-nestleControllers.controller('ProductController', function(){
+nestleControllers.controller('OperatorController', function($interval){
+
+    this.showLogo = true;
+    this.showHeader = true
+    this.showInfotext = true;
+    this.showContact = false;
+    this.showSidebar = true;
+
+    this.toggleContact = function() {
+        this.showContact = !this.showContact;
+    }
+
+    // var self = this;
+
+    // $interval(function(){
+    //     self.showLogo = !self.showLogo;
+    // }, 3000)
 
 });
 
 nestleControllers.controller('BackgroundController', function(){
 
     this.activeSlide = 0;
+
+    this.nextSlide = function() {
+        this.activeSlide = (this.activeSlide + 1) % this.slides.length;
+    }
 
     this.slides = [
         {
@@ -152,9 +172,5 @@ nestleControllers.controller('SidebarController', function(){
             src: 'img/helado_20.png'
         },
     ];
-
-});
-
-nestleControllers.controller('FooterController', function(){
 
 });

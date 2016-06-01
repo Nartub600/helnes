@@ -1,0 +1,39 @@
+.contact-box {
+    position: absolute;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 2;
+    left: -30%;
+    bottom: 10%;
+    width: 300px;
+    height: 250px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: $white;
+    -webkit-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.5);
+    font-family: Arial;
+
+    h1 {
+        color: $blue;
+        text-transform: uppercase;
+        font-size: $font-m;
+    }
+    h2 {
+        color: $light-blue;
+        font-size: $font-s;
+    }
+    h3 {
+        color: $black;
+        font-size: $font-xs;
+    }
+    h4 {
+        color: $black;
+        font-size: $font-s;
+    }
+    h5 {
+        color: $light-blue;
+        font-size: $font-xs;
+    }
+}
