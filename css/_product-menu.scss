@@ -9,12 +9,19 @@
     padding: 10px;
 
     .menu-icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
         position: absolute;
         top: 0;
         right: 100%;
+        width: 50px;
+        padding-top: 1.5%;
+        cursor: hand;
+
         img {
-            padding-top: 20%;
-            padding-right: 20%;
+            margin: 0;
+            padding: 0;
         }
     }
 

@@ -1,0 +1,17 @@
+.bullets {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 17%;
+    z-index: 3;
+
+    .bullet {
+        opacity: 0.5;
+        margin: 3px;
+        cursor: hand;
+    }
+
+    .active {
+        opacity: 1;
+    }
+}

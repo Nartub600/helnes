@@ -8,7 +8,7 @@
     bottom: 0;
     margin: 0;
     padding: 0;
-    z-index: 1;
+    z-index: 2;
 
     .footer-bg {
         width: 100%;
@@ -26,6 +26,7 @@
                 font-size: 50%;
                 text-transform: uppercase;
                 margin: 3px;
+                cursor: hand;
             }
             .brand {
                 color: $deep-blue;
@@ -55,6 +56,10 @@
                 font-family: Fishmonger;
                 font-size: 50%;
                 text-transform: uppercase;
+            }
+
+            img {
+                cursor: hand;
             }
         }
     }

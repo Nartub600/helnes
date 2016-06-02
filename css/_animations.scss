@@ -54,3 +54,12 @@
 .product-menu.active {
     right: 0% !important;
 }
+
+.menu-icon-arrow {
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.menu-icon-arrow.active {
+    transform: rotate(180deg);
+}
