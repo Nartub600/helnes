@@ -1,6 +1,3 @@
 <div class="bg">
-    <img class="slide" ng-repeat="slide in bgCtrl.slides" ng-src="{{ slide.src }}" ng-show="bgCtrl.activeSlide == {{ $index }}" />
-    <div class="bullets">
-        <img class="bullet" ng-repeat="slide in bgCtrl.slides" ng-src="img/bullet.png" ng-class="(bgCtrl.activeSlide == {{ $index }} ? 'active' : '')" />
-    </div>
+    <img class="slide" ng-repeat="slide in operator.slides" ng-src="{{ slide.src }}" ng-show="operator.activeSlide == {{ $index }}" />
 </div>
