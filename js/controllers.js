@@ -2,7 +2,7 @@
 
 var nestleControllers = angular.module('nestleControllers', []);
 
-nestleControllers.controller('OperatorController', function($interval, $http){
+nestleControllers.controller('HomeController', function($interval, $http){
 
     this.showLogo = true;
     this.showHeader = true;
@@ -27,11 +27,11 @@ nestleControllers.controller('OperatorController', function($interval, $http){
 
     var self = this;
 
-    $http.get('json/slides.json').then(function(response){
+    $http.get('json/slides.json').then(function(response) {
         self.slides = response.data;
     });
 
-    $http.get('json/products.json').then(function(response){
+    $http.get('json/products.json').then(function(response) {
         self.products = response.data;
     });
 

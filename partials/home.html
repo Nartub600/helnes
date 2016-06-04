@@ -1,20 +1,20 @@
-<div class="operator" ng-controller="OperatorController as operator">
+<div class="nestle" ng-controller="HomeController as home">
 
     <nestle-background></nestle-background>
 
     <nestle-bgcontrol></nestle-bgcontrol>
 
-    <nestle-header ng-show="operator.showHeader"></nestle-header>
+    <nestle-header ng-show="home.showHeader"></nestle-header>
 
-    <nestle-logo ng-show="operator.showLogo"></nestle-logo>
+    <nestle-logo ng-show="home.showLogo"></nestle-logo>
 
-    <nestle-product-menu ng-class="(operator.showProductMenu ? 'active' : '')"></nestle-product-menu>
+    <nestle-product-menu ng-class="(home.showProductMenu ? 'active' : '')"></nestle-product-menu>
 
-    <nestle-sidebar ng-show="operator.showSidebar"></nestle-sidebar>
+    <nestle-sidebar ng-show="home.showSidebar"></nestle-sidebar>
 
-    <nestle-infotext ng-show="operator.showInfotext"></nestle-infotext>
+    <nestle-infotext ng-show="home.showInfotext"></nestle-infotext>
 
-    <nestle-contact ng-class="(operator.showContact ? 'active' : '')"></nestle-contact>
+    <nestle-contact ng-class="(home.showContact ? 'active' : '')"></nestle-contact>
 
     <nestle-footer></nestle-footer>
 
