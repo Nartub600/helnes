@@ -12,7 +12,7 @@ nestleDirectives.directive('nestleBackground', function() {
 nestleDirectives.directive('nestleBgcontrol', function($interval){
     function link(scope, element, attrs) {
         var sliderTimer = $interval(function() {
-            scope.operator.nextSlide();
+            scope.home.nextSlide();
         }, 5000);
     }
 
@@ -69,5 +69,19 @@ nestleDirectives.directive('nestleFooter', function(){
     return {
         replace: true,
         templateUrl: 'partials/nestle-footer.html'
+    }
+});
+
+nestleDirectives.directive('nestleProduct', function(){
+    return {
+        replace: true,
+        templateUrl: 'partials/nestle-product.html'
+    }
+});
+
+nestleDirectives.directive('nestleProductControl', function(){
+    return {
+        replace: true,
+        templateUrl: 'partials/nestle-product-control.html'
     }
 });

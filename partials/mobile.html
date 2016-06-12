@@ -1,12 +1,32 @@
-<div class="mobile">
+<div class="mobile" ng-controller="HomeController as home">
 
     <div class="top-bar">
         <img class="top-bg" src="img/mobile-bg-top.png" />
-        <div class="menu-icon">☰</div>
+        <div class="menu-icon" ng-click="home.toggleMobileMenu()">☰</div>
     </div>
 
-    <div class="mobile-menu">
+    <div class="mobile-menu" ng-class="( home.showMobileMenu ? 'active' : '' )">
         <img class="mobile-menu-bg" src="img/mobile-menu-bg.png" />
+        <div class="categories">
+            <ul>
+                <li ng-repeat="category in home.categories">
+                    <div class="color-code" style="background: {{ category.color }}"></div>
+                    <p class="cat-name">{{ category.name }}</p>
+                    <div class="arrow">></div>
+                </li>
+            </ul>
+        </div>
+        <div class="menu-footer">
+            <div class="left">
+                <p class="socialtext">Síguenos en <img src="img/fb.png" /><img src="img/tw.png" /></p>
+                <p class="normaltext">Política de privacidad</p>
+            </div>
+            <div class="right">
+                <p class="legaltext">Helados Nestlé ® México, 2016</p>
+                <p class="normaltext">Contactanos</p>
+            </div>
+        </div>
+        <p></p>
     </div>
 
     <div class="logo">

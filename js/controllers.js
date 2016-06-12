@@ -3,28 +3,45 @@
 var nestleControllers = angular.module('nestleControllers', []);
 
 nestleControllers.controller('HomeController', function($interval, $http){
-
+    // ui control
     this.showLogo = true;
     this.showHeader = true;
     this.showInfotext = true;
-    this.showContact = false;
     this.showSidebar = true;
-    this.showProductMenu = false;
 
+    this.showContact = false;
     this.toggleContact = function() {
         this.showContact = !this.showContact;
     }
 
+    this.showProductMenu = false;
     this.toggleProductMenu = function() {
         this.showProductMenu = !this.showProductMenu;
     }
 
+    this.showNutrimental = false;
+    this.toggleNutrimental = function() {
+        this.showNutrimental = !this.showNutrimental;
+    }
+
+    this.showNutrimental = false;
+    this.toggleNutrimental = function() {
+        this.showNutrimental = !this.showNutrimental;
+    }
+
+    this.showMobileMenu = false;
+    this.toggleMobileMenu = function() {
+        this.showMobileMenu = !this.showMobileMenu;
+    }
+
+    // desktop slider
     this.activeSlide = 0;
 
     this.nextSlide = function() {
         this.activeSlide = (this.activeSlide + 1) % this.slides.length;
     }
 
+    // data
     var self = this;
 
     $http.get('json/slides.json').then(function(response) {
@@ -33,6 +50,10 @@ nestleControllers.controller('HomeController', function($interval, $http){
 
     $http.get('json/products.json').then(function(response) {
         self.products = response.data;
+    });
+
+    $http.get('json/categories.json').then(function(response) {
+        self.categories = response.data;
     });
 
 });

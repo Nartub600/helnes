@@ -14,9 +14,9 @@ nestleApp.config(function($routeProvider, $locationProvider){
             templateUrl: 'partials/home.html'
         })
 
-        .when('/product', {
-            templateUrl: 'partials/product.html'
-        })
+        // .when('/product', {
+        //     templateUrl: 'partials/product.html'
+        // })
 
         .when('/product/:product', {
             templateUrl: 'partials/product.html'

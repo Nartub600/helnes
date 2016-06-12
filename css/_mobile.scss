@@ -6,6 +6,7 @@
 
     .top-bar {
         position: relative;
+        z-index: 1;
         .top-bg {
             width: 100%;
         }
@@ -24,7 +25,7 @@
         position: absolute;
         top: 2%;
         left: 5%;
-        z-index: 10;
+        z-index: 3;
         img {
             width: 75%;
         }

@@ -1,10 +1,89 @@
 .mobile-menu {
     width: 100%;
     position: absolute;
-    top: 20%;
+    top: 100%;
     left: 0;
     z-index: 2;
     .mobile-menu-bg {
         width: 100%;
+    }
+    .categories {
+        position: absolute;
+        width: 100%;
+        top: 10%;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            font-family: Fishmonger;
+            color: $white;
+            text-transform: uppercase;
+            display: block;
+            height: 40px;
+
+            .color-code {
+                width: 15px;
+                height: 40px;
+                background: red;
+                position: absolute;
+                left: 0;
+                display: inline;
+            }
+            .cat-name {
+                display: inline;
+                padding-left: 30px;
+            }
+            .arrow {
+                position: absolute;
+                right: 0;
+                width: 30px;
+                height: 100%;
+                display: inline;
+            }
+        }
+    }
+    .menu-footer {
+        // position: fixed;
+        // bottom: 0;
+        height: 15%;
+        width: 100%;
+        background: $white;
+        .left {
+            width: 50%;
+            position: absolute;
+            left: 0;
+            height: 100%;
+        }
+        .right {
+            width: 50%;
+            position: absolute;
+            right: 0;
+            height: 100%;
+        }
+        .socialtext {
+            font-family: Fishmonger;
+            text-transform: uppercase;
+            color: $deep-blue;
+            font-size: $font-xs;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .legaltext {
+            font-family: Fishmonger;
+            text-transform: uppercase;
+            color: $light-blue;
+            font-size: $font-xs;
+            text-align: center;
+        }
+        .normaltext {
+            font-family: Arial;
+            text-transform: uppercase;
+            color: $black;
+            font-size: $font-xs;
+            text-align: center;
+        }
     }
 }

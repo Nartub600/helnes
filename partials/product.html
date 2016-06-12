@@ -1,87 +1,18 @@
-<div class="product" ng-controller="ProductController as prodCtrl">
+<div class="nestle" ng-controller="HomeController as home">
 
-    <nestle-background>
+    <nestle-product></nestle-product>
 
-    </nestle-background>
+    <nestle-product-control></nestle-product-control>
 
-    <div class="overlay">
+    <nestle-logo ng-show="home.showLogo"></nestle-logo>
 
-        <div class="controls">
-            <img src="img/arrowproduct-up.png" />
-            <img src="img/arrowproduct-down.png" />
-        </div>
+    <nestle-product-menu ng-class="(home.showProductMenu ? 'active' : '')"></nestle-product-menu>
 
-        <nestle-logo></nestle-logo>
+    <nestle-sidebar ng-show="home.showSidebar"></nestle-sidebar>
 
-        <!-- <nestle-product-menu></nestle-product-menu> -->
-        <div class="top-menu">
-            <img src="img/menu-icon.png" />
-        </div>
+    <nestle-contact ng-class="(home.showContact ? 'active' : '')"></nestle-contact>
 
-        <nestle-sidebar></nestle-sidebar>
-
-        <div class="product-elements">
-
-            <div class="product-info">
-                <h1>Danesa 33 ® Banana Split Heaven</h1>
-                <h2>Delicioso y <span class="highlight">sorprendente</span></h2>
-                <h3>Helado de grasa vegetal sabor a chocolate, plátano y fresa, con jarabe sabor a chocolate.</h3>
-                <h4>
-                    <span>Información Nutrimental</span>
-                    <div class="close">
-                        <div class="arr">></div>
-                    </div>
-                </h4>
-            </div>
-
-            <div class="product-pic">
-                <img src="img/product.png" />
-            </div>
-
-            <div class="product-logo">
-                <img src="img/product-logo.png" />
-            </div>
-
-            <div class="product-nutrimental">
-                <div class="close">
-                    <div class="ecs">✖</div>
-                </div>
-                <h1>Tandem Sandwich ®</h1>
-                <h2>Tamaño de porción 160 ml</h2>
-                <h3>Contenido energético 1202 kj - 287 kcal</h3>
-                <div class="items">
-                    <div class="item-row">
-                        <div class="left">Proteínas</div>
-                        <div class="right">2,55 g</div>
-                    </div>
-                    <div class="item-row">
-                        <div class="left">Sodio</div>
-                        <div class="right">155,9 mg</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- <div class="header">
-            <img src="img/colgante.png" />
-            <p class="tweet">#quechangon! Tutankamonki en el mundo perdido. Nuevo episodio de mundo changón http://bit.ly/107mxcv</p>
-        </div> -->
-
-        <!-- <div class="texto1">
-            <p class="texto">La jugada 50 con Nestlé®</p>
-            <p class="button"><span>Participa ahora</span> <img src="img/arrow-right.png" /></p>
-        </div> -->
-
-        <!-- <div class="bullets">
-            <img src="img/bullet.png" ng-click="vm.prev()" />
-            <img src="img/bullet.png" ng-click="vm.next()" class="inactive" />
-            <img src="img/bullet.png" class="inactive" />
-        </div> -->
-
-        <nestle-contact></nestle-contact>
-
-        <nestle-footer></nestle-footer>
+    <nestle-footer></nestle-footer>
 
     </div>
 

@@ -1,0 +1,27 @@
+.product-control {
+    position: absolute;
+    top: 0%;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5%;
+    height: 100%;
+    text-align: center;
+    z-index: 5;
+
+    img {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img:nth-child(1) {
+        top: 5%;
+    }
+    img:nth-child(2) {
+        bottom: 5%;
+    }
+}
