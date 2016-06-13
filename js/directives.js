@@ -9,7 +9,7 @@ nestleDirectives.directive('nestleBackground', function() {
     }
 });
 
-nestleDirectives.directive('nestleBgcontrol', function($interval){
+nestleDirectives.directive('nestleBgControl', function($interval){
     function link(scope, element, attrs) {
         var sliderTimer = $interval(function() {
             scope.home.nextSlide();
@@ -18,7 +18,7 @@ nestleDirectives.directive('nestleBgcontrol', function($interval){
 
     return {
         replace: true,
-        templateUrl: 'partials/nestle-bgcontrol.html',
+        templateUrl: 'partials/nestle-bg-control.html',
         link: link
     }
 });
