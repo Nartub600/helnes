@@ -2,7 +2,10 @@
 
 var nestleControllers = angular.module('nestleControllers', []);
 
-nestleControllers.controller('HomeController', function($interval, $http){
+nestleControllers.constant("API", {
+        "URL": "http://146.20.73.4/PelaPopNuevo/Api"
+    })
+.controller('HomeController', function($interval, $http, API){
     // ui control
     this.showLogo = true;
     this.showHeader = true;
@@ -44,15 +47,15 @@ nestleControllers.controller('HomeController', function($interval, $http){
     // data
     var self = this;
 
-    $http.get('json/slides.json').then(function(response) {
+    $http.get(API.URL + '/Slides').then(function(response) {
         self.slides = response.data;
     });
 
-    $http.get('json/products.json').then(function(response) {
+    $http.get(API.URL + '/Products').then(function(response) {
         self.products = response.data;
     });
 
-    $http.get('json/categories.json').then(function(response) {
+    $http.get(API.URL + '/Categories').then(function(response) {
         self.categories = response.data;
     });
 
